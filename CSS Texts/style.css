@@ -1,0 +1,88 @@
+
+*{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+body {
+  transform: rotate(-5deg);
+  
+}
+
+.ShadowText{
+	font-weight: 400px;
+	font-size: 3em;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #fff, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+.ThreedText{
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+
+.GradientText {
+  font-size: 3em;
+  background:linear-gradient(to left ,green, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.StrokeText {
+	font-size: 3em;
+	letter-spacing: 3px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.GlowText{
+	font-size: 3em;
+	color: #blue;
+	animation: neon .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
