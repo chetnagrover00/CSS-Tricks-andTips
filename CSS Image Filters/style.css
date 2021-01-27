@@ -1,0 +1,98 @@
+.title{
+  text-align: center;
+  font-weight: 800;
+  font-size: 5em;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #fff, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    font-size: 2em;
+}
+img{
+  cursor: crosshair;
+  transition: all 0.3s ease;
+  width:100%;
+   }
+
+   .final__grayscale {
+     -webkit-filter: grayscale(1);
+             filter: grayscale(1);
+   }
+   .final__grayscale:hover {
+     -webkit-filter: grayscale(0);
+             filter: grayscale(0);
+   }
+   .final__blur {
+     -webkit-filter: blur(3px);
+             filter: blur(3px);
+   }
+   .final__blur:hover {
+     -webkit-filter: blur(0px);
+             filter: blur(0px);
+   }
+   .final__invert {
+     -webkit-filter: invert(1);
+             filter: invert(1);
+   }
+   .final__invert:hover {
+     -webkit-filter: invert(0);
+             filter: invert(0);
+   }
+   .final__sepia {
+     -webkit-filter: sepia(1);
+             filter: sepia(1);
+   }
+   .final__sepia:hover {
+     -webkit-filter: sepia(0);
+             filter: sepia(0);
+   }
+
+   .final__brightness{
+	-webkit-filter: brightness(200%);
+             filter: brightness(200%);
+   }
+
+    .final__brightness:hover{
+	-webkit-filter: brightness(30%);
+             filter: brightness(30%);
+   }
+
+   .final__contrast{
+  -webkit-filter: contrast(200%);
+             filter: contrast(200%);
+   }
+
+    .final__contrast:hover{
+  -webkit-filter: contrast(10%);
+             filter: contrast(10%);
+   }
+
+.final__opacity{
+  -webkit-filter: opacity(20%);
+             filter: opacity(20%);
+   }
+
+    .final__opacity:hover{
+  -webkit-filter: opacity(100%);
+             filter: opacity(100%);
+   }
+
+   .final__hue-rotate{
+  -webkit-filter: hue-rotate(180deg);
+             filter: hue-rotate(180deg);
+   }
+
+    .final__hue-rotate:hover{
+  -webkit-filter: hue-rotate(0deg);
+             filter: hue-rotate(0deg);
+   }
+
