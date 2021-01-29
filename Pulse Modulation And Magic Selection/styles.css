@@ -1,0 +1,30 @@
+
+body {
+	margin: 0 10%;
+	color: #57413b;
+	background-color: #fffcf5;
+	font: 1.25rem/1.5 'Roboto', sans-serif;
+	text-align: center;
+}
+
+p::selection{
+	background-color: yellow;
+	color: blue;
+}
+
+button{
+	animation: radial-pulse 1s infinite;
+	padding: 20px;
+	margin: 20px;
+}
+
+@keyframes radial-pulse {
+0% {
+box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+    100% {
+      box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+
+}
