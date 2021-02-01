@@ -1,0 +1,205 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  color: #456;
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+ 
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 0.6em;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.first {
+	border-color: #e74c3c;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+.third {
+  border-color: #3498db;
+  color: white;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: black;
+}
+
+.second {
+  border-color: #f1c40f;
+  color: black;
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+.second:hover {
+  background-position: 0;
+}
+
+.fourth {
+     position: relative;
+     z-index: 1;
+     display: inline-block;
+     padding: 20px 40px;
+     box-sizing: border-box;
+     border: 10px solid transparent;
+     border-image: linear-gradient(to top right, orangered, yellow);
+     border-image-slice: 1;
+     color: orangered;
+     outline: none;
+     transition: all 0.3s ease;
+   }
+   .fourth:hover {
+     background-size: 100%;
+     background-image: linear-gradient(to top right, orangered, yellow);
+     color: white;
+   }
+}
+
+
+.fifth{
+  outline:0; 
+  font-size:1em;
+  font-weight:600;
+  background:#d98e20;
+  color: black;
+  border:none;
+  padding:2em 4em;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20,
+    3px 3px 0 0 #d98e20,
+    4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20,
+    6px 6px 0 0 #d98e20,
+    7px 7px 0 0 #d98e20,
+    8px 8px 0 0 #d98e20,
+    9px 9px 0 0 #d98e20,
+    10px 10px 0 0 #d98e20,
+    11px 11px 0 0 #d98e20,
+    12px 12px 0 0 #d98e20;
+}
+.fifth:hover{
+  color:#444;
+  background:orange;
+}
+.fifth:active{
+  color:#222;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20,
+    3px 3px 0 0 #d98e20,
+    4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20;
+}
+
+
+.sixth {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.sixth:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glow 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.sixth:active {
+    color: #000
+}
+
+.sixth:active:after {
+    background: transparent;
+}
+
+.sixth:hover:before {
+    opacity: 1;
+}
+
+.sixth:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glow {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* THE END*/
