@@ -1,0 +1,39 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 10em;
+	font-weight: 1000;
+	text-align: center;
+	margin-top: 200px;
+
+}
+.clip-text{
+	background: url(https://images.unsplash.com/photo-1483004406427-6acb078d1f2d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YnViYmxlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+
+.clip-text-2{
+	background: url(https://media2.giphy.com/media/3otO6NFBIAFg2vPZuM/200.webp?cid=ecf05e47y0kpze8ucpnudzqyl3liz918nlw8y1dgn4mbqgxf&rid=200.webp);
+	background-size: cover;
+	background-position: center;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
