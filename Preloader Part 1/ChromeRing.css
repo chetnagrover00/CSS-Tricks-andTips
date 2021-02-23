@@ -1,0 +1,43 @@
+body{
+  background:#07121d;
+  overflow:hidden;
+}
+.section{
+  margin-bottom:40px;
+  float: left;
+  width: 100%;
+}
+.tiles{
+  width: 32.50%;
+  float: left;
+  padding:20px 10px 40px;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.Ring{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 100px;
+  height:100px;
+  margin: auto;
+  border-radius:100px;
+  border-width:10px;
+  border-style:solid;
+  border-top-color:#4285f4;
+  border-right-color:#ea4335;
+  border-bottom-color:#fbbc05;
+  border-left-color:#34a853;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-animation: round 1s infinite linear;
+  animation: round 1s infinite linear;
+}
+@-webkit-keyframes round{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+@keyframes round{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
